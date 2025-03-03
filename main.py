@@ -66,7 +66,7 @@ def process_row_data(sku, vendor):
             coords = steps[0].strip('[]').split(',')
             pg.click(x=int(coords[0]), y=int(coords[1]), clicks=3)
             time.sleep(0.2)
-            pg.typewrite(str(sku) + "\n")  # Using str() to handle non-string values
+            pg.typewrite(str(sku) + "\\n")  # Using str() to handle non-string values
             time.sleep(0.2)
             
             # Export
