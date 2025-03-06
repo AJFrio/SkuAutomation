@@ -78,7 +78,7 @@ def process_row_data(sku, vendor):
             pg.click(x=int(coords[0]), y=int(coords[1]))
             time.sleep(0.2)
             
-            vendor_path = f"{base_path}{vendor}"
+            vendor_path = f"{base_path}\\{vendor}"
             if not os.path.exists(vendor_path):
                 os.makedirs(vendor_path)
             pg.typewrite(vendor_path)
