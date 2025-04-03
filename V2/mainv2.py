@@ -3,7 +3,7 @@ import pyautogui as pg
 import time
 import os
 
-base_path = "C:\\Users\\josep\\OneDrive\\Desktop\\V2"
+base_path = "C:\\Users\\admin\\Desktop\\V2"
 
 def process_row_data(sku, vendor):
     try:
@@ -117,5 +117,5 @@ def process_excel_file(excel_path):
         print(f"Error processing Excel file: {e}")
 
 if __name__ == "__main__":
-    excel_path = input("Enter the path to the Excel file: ")
+    excel_path = 'product.xlsx'
     process_excel_file(excel_path)
